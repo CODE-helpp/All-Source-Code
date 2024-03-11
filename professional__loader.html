@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Loader</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #303030;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pro_loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ring {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid yellow;
+            border-top: 0px solid white;
+            border-right: 0px solid white;
+            text-align: center;
+            line-height: 100px;
+            animation: loader 2s infinite ease-in-out;
+            position: absolute;
+            box-shadow: 0 0 5px black;
+        }
+
+        .content {
+            position: absolute;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            color: yellow;
+            text-shadow: 0 0 15px yellow;
+        }
+
+        @keyframes loader {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="pro_loader">
+        <div class="ring"></div>
+        <div class="content">Loading...</div>
+    </div>
+
+
+
+</body>
+
+</html>
