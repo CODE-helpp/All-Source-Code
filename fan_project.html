@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan</title>
+    <style>
+
+
+        #fan{
+            width: 300px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            animation: rotateA infinite linear;
+        }
+        .main button{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 8px black;
+            border: none;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        
+        #onbtn{
+            background-color: #00ff00;
+            margin-left: 456px;
+        }
+        #offbtn{
+            background-color: red;
+        }
+        @keyframes rotateA {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+        <img src="https://png.pngtree.com/png-vector/20190721/ourlarge/pngtree-fan-icon-for-your-project-png-image_1556140.jpg" id="fan">
+        <button onclick="ONfun()" id="onbtn">ON</button>
+        <button onclick="OFFfun()" id="offbtn">OFF</button>
+        <button onclick="fun1()">1</button>
+        <button onclick="fun2()">2</button>
+        <button onclick="fun3()">3</button>
+    </div>
+
+
+    <script>
+
+
+        const fan = document.getElementById("fan");
+
+        function ONfun()
+        {fan.style.animationDuration= 3+"s";}
+
+        function OFFfun()
+        {fan.style.animationDuration= 0+"s";}
+
+        function fun1()
+        {fan.style.animationDuration= 1+"s";}
+
+        function fun2()
+        {fan.style.animationDuration= 0.7+"s";}
+
+        function fun3()
+        {fan.style.animationDuration= 0.3+"s";}
+
+
+    </script>
+</body>
+</html>
